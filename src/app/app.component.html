@@ -1,0 +1,222 @@
+
+<h1>Hello</h1>
+<div class="container">
+  <div class="row">
+
+    <!--First six col (registration form)-->
+    <div class="col-sm-6">
+      <!-- Nest user registration component -->
+      <app-user-registration></app-user-registration>
+    </div>
+
+    <!--Last six col (List)-->
+    <div class="col-sm-6">
+      <!-- Nest user list component -->
+      <app-user-list></app-user-list>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div id="div2">
+  <h3>List of registered users</h3>
+  <hr class="w-50 d-block mx-auto">
+  <h4 *ngIf="data.length==0">No users found</h4>
+
+  <div *ngIf="data.length!=0">
+
+
+    <div class="accordion" id="ad"> 
+      <div  *ngFor="let userObj of data;let ind=index;" class="accordion-item w-50 d-block mx-auto m-3">
+        {{getTarget(ind)}}
+        {{getId(ind)}}
+        <div class="accordion-header m-3">
+          <button class="accordian-button" data-bs-toggle="collapse" [attr.data-bs-target]="'#a'+ind"  data-bs-parent="#ad">{{userObj.username}}</button>       <button class="btn btn-danger" style="float: right;" (click)="deleteUser(ind)"><i class="fas fa-trash-alt" ></i></button>
+        </div>
+        <div class="accordion-collapse collapse attbody" [attr.id]="'a'+ind"  data-bs-parent="#ad">
+            <p>Date of birth : {{userObj.DOB}}</p>
+            <p>Email : {{userObj.email}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+-->
+
+<!-- Assignment -19 USER REGISTRATION FORM
+
+<h1>USER REGISTRATION FORM</h1>
+
+<div id="div1">
+
+  // Registration form 
+  <form id="form1" #ref="ngForm" (ngSubmit)="addData(ref)">
+
+    <div>
+      <label for="un">Username</label>
+      <input type="text" name="username" id="un" class="form-control" ngModel>
+    </div>
+
+    <div>
+      <label for="db">Date of birth</label>
+      <input type="date" name="DOB" id="db" class="form-control" ngModel>
+    </div>
+
+    <div>
+      <label for="em">Email</label>
+      <input type="email" name="email" id="em" class="form-control" ngModel>
+    </div>
+
+      <button id="bt1" class="btn d-block mx-auto" type="submit" >Register</button>
+  </form>
+
+</div>
+
+<div id="div2">
+  <h3>List of registered users</h3>
+  <hr class="w-50 d-block mx-auto">
+  <h4 *ngIf="data.length==0">No users found</h4>
+
+  <div *ngIf="data.length!=0">
+
+
+    <div class="accordion" id="ad"> 
+      <div  *ngFor="let userObj of data;let ind=index;" class="accordion-item w-50 d-block mx-auto m-3">
+        {{getTarget(ind)}}
+        {{getId(ind)}}
+        <div class="accordion-header m-3">
+          <button class="accordian-button" data-bs-toggle="collapse" [attr.data-bs-target]="'#a'+ind"  data-bs-parent="#ad">{{userObj.username}}</button>       <button class="btn btn-danger" style="float: right;" (click)="deleteUser(ind)"><i class="fas fa-trash-alt" ></i></button>
+        </div>
+        <div class="accordion-collapse collapse attbody" [attr.id]="'a'+ind"  data-bs-parent="#ad">
+            <p>Date of birth : {{userObj.DOB}}</p>
+            <p>Email : {{userObj.email}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+-->
+
+<!--Display Table
+    <table class="table">
+      <tr>
+        <th>Name</th>
+        <th>DOB</th>
+        <th>Email</th>
+      </tr>
+      <tbody>
+        <tr *ngFor="let userObj of data,ind index">
+          <td>{{userObj.username}}</td>
+          <td>{{userObj.DOB}}</td>
+          <td>{{userObj.email}}</td>
+          <td class="text-danger" (click)="deleteUser(ind)"><i class="fas fa-trash-alt"></i></td>
+        </tr>
+      </tbody>
+    </table>-->
+
+<!--  Add names to list Assignment-18  
+
+<div class="text-center" id="div1">
+  <h1>USER INFO</h1>
+  <input type="text" placeholder="Enter user name" #ref>
+  <br>
+  <button id="bt1" class="btn" (click)="addName(ref.value); ref.value='' ">Add to list</button>
+</div>
+<div class="text-center " id="div2">
+  <button id="bt2" class="btn" (click)="setStatus()" >{{status ? "Hide users" : "Show users"}}</button>
+  <div *ngIf="status" id="div3">
+    <h2>List of users</h2>
+    <hr class="w-50 d-block mx-auto">
+    <h4 *ngFor="let i of ar">{{i}}</h4>
+  </div>
+</div>
+
+
+-->
+
+<!--applications-
+
+<div class="text-center">
+<input type="text" class="form-control" #ref><br><br>
+<button class="btn btn-success p-3" (click)="sendName(ref.value)">Add name</button>
+</div>
+
+<h2 class="text-center">List of names</h2>
+<h4 class="text-center text-warning" *ngFor="let i of ar">{{i}}</h4>
+-->
+
+<!-- ngIf 
+<div class="text-center">
+  <button class="btn btn-success p-3 m-auto" (click)="setStatus()">{{status ? "Hide" : "Show"}}</button>
+  <h1 class="heading" *ngIf="status">Welcome to Angular framework</h1>
+</div>-->
+
+<!-- ngFor 
+<h2 class="text-center text-warning" *ngFor="let i of arr">{{i}}</h2>-->
+
+<!--
+<h1 class="heading">Welcome to Angular framework</h1>
+<hr>
+
+<div class="text-center">
+  Interpolation
+  <h1 class="text-primary"> {{nameOfCourse}}  <span>{{version}}</span> </h1>
+  <h2 class="text-warning"> {{instructor}} </h2>
+
+  <h4>Course Details</h4>
+  <h5>{{courseDetails.duration}}</h5>
+  <h5>{{courseDetails.modeOfTraining}}</h5>-->
+
+  <!--Property Binding
+  <img [src]=imagePath alt=""><br><br>
+
+  <input type="text" [value]=nameOfCourse>-->
+
+  <!--Only Property Binding works for Boolean data
+  <button class="btn btn-success" [disabled]=status>Test Value</button><br><br>-->
+
+  <!-- Event Binding -->
+  <!--
+  <div>
+    <input type="text" class="form-control" #ref>
+    <button class="btn btn-primary" (click)="sendData(ref.value)" >Send data</button>
+    <h3>{{data}}</h3>
+  </div>
+</div>-->
+

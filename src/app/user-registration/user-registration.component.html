@@ -1,0 +1,28 @@
+<!-- Form using two way databinding-->
+
+<h1>USER REGISTRATION FORM</h1>
+
+<div id="div1">
+
+  <!-- Registration form -->
+  <form id="form1" #ref="ngForm" (ngSubmit)="addData()">
+
+    <div>
+      <label for="un">Username</label>
+      <input type="text" name="username" id="un" class="form-control" [(ngModel)]=userObj.username>
+    </div>
+
+    <div>
+      <label for="db">Date of birth</label>
+      <input type="date" name="DOB" id="db" class="form-control" [(ngModel)]=userObj.DOB>
+    </div>
+
+    <div>
+      <label for="em">Email</label>
+      <input type="email" name="email" id="em" class="form-control" [(ngModel)]=userObj.email>
+    </div>
+
+      <button id="bt1" class="btn d-block mx-auto" type="submit" >Register</button>
+  </form>
+
+</div>

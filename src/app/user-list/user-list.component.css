@@ -1,0 +1,41 @@
+
+h1
+{
+    text-align: center;
+    color: rgb(111, 184, 206);
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 0px rgb(85, 87, 172);
+    margin: 4px;
+}
+h4
+{
+    color: rgb(201, 84, 84);
+}
+#div1
+{
+    background-color: rgb(149, 168, 202);
+    margin: 1% 25%;
+}
+#div2
+{
+    text-align: center;
+    background-color: rgb(234, 235, 182);
+    margin: 1% 25%;
+    padding: 1% 0% 2% 0%;
+}
+#form1
+{
+    margin: 1% 10%;
+    padding: 3%;
+}
+#bt1
+{
+    background-color: rgb(236, 136, 223);
+    padding: 8px;
+    margin: 10px;
+    border: 2px solid rgb(110, 140, 190);
+}
+.attbody
+{
+    color: rgb(94, 65, 201);
+}
