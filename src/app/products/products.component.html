@@ -1,8 +1,14 @@
+
+<div class="text-center">
+<h5 class="text-white">No of products selected: {{productCount}}</h5>
+<span *ngFor="let title of productsSentByChild" class="text-white">{{title }},</span>
+</div>
+
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5 mt-3 mb-3">
 
-    <div class="col" *ngFor="let p of products">
+    <div class="col" *ngFor="let prObj of products">
         <!-- Nest product-details component to products component -->
-        <app-product-details ></app-product-details>
+        <app-product-details [productObj]=prObj (myEvent)="getProductDetailsFromChild($event)"></app-product-details>
     </div>
     
 </div>
