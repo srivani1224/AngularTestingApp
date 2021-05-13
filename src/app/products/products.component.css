@@ -1,0 +1,12 @@
+
+
+li{
+    background-color: hsl(340, 48%, 54%);
+}
+li a{
+    color: white;
+}
+
+active{
+    background-color: red;
+}

@@ -9,6 +9,24 @@ import { Product } from '../models/products.model';
 })
 export class ProductsComponent  {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*
   products:Product[]=[
     {
     productTitle:"Parrot",
@@ -55,7 +73,7 @@ export class ProductsComponent  {
       this.productsSentByChild.push(productTitle);
       this.productCount++;
     }
-
+    */
 }
 
 

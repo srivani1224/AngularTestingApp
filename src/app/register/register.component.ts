@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() { 
+    console.log("Register constructor is executed");
   }
 
+  ngOnInit(){
+
+  }
+
+  ngOnDestroy(){
+    console.log("register component is destroyed")
+  }
 }
