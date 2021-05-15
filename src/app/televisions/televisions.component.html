@@ -1,1 +1,8 @@
-<h1 class="text-white text-center">{{num}}</h1>
+<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5 mt-3 mb-3">
+
+    <div class="col" *ngFor="let teleObj of televisions">
+        <!-- Nest product-details component to products component -->
+        <app-product-details [productObj]=teleObj ></app-product-details>
+    </div>
+    
+</div>
