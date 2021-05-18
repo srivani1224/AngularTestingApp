@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Post } from '../app/models/posts.model'
+import { Fakecolor } from './models/fakecolor.model'
+import { Fakeemp} from './models/fakeemp.model'
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -17,4 +19,11 @@ export class FakedataService {
     return this.fakeObj.get<Post[]>('https://jsonplaceholder.typicode.com/posts')
   }
 
+  getColor():Observable<Fakecolor>{
+    return this.fakeObj.get<Fakecolor>('https://reqres.in/api/unknown')
+  }
+
+  getEmp():Observable<Fakeemp[]>{
+    return this.fakeObj.get<Fakeemp[]>('https://jsonplaceholder.typicode.com/users')
+  }
 }

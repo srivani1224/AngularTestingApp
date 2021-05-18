@@ -1,0 +1,19 @@
+<h3 class="text-center text-white">Page No : {{myColors.page}}</h3>
+<p class="text-center text-white">No Of Colors per page: {{myColors.per_page}},   Total Colors : {{myColors.total  }},   Total Pages : {{myColors.total_pages  }}</p>
+
+<div *ngFor="let color of myColors.data" style="border:1px solid black; padding:5px; margin:1em 5em;background-color:white; border-radius: 2px;">
+
+    <div class="row" >
+    
+        <div class="col">
+            <h5>COLOR ID : {{color.id}}</h5>
+            <h5>COLOR NAME : {{color.name}}</h5>
+            <h5>YEAR : {{color.year}}</h5>
+            <h5>PANTON VALUE : {{color.pantone_value}}</h5>
+        </div>
+
+        <div class="col mx-3 my-1" style="background-color: {{color.color}};">
+        </div>
+
+    </div>
+</div>

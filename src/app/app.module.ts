@@ -18,6 +18,8 @@ import { BikesComponent } from './bikes/bikes.component';
 import { TelevisionsComponent } from './televisions/televisions.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TestComponent } from './test/test.component';
+import { FakeColorComponent } from './fake-color/fake-color.component';
+import { FakeEmployeeComponent } from './fake-employee/fake-employee.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { TestComponent } from './test/test.component';
     BikesComponent,
     TelevisionsComponent,
     PageNotFoundComponent,
-    TestComponent
+    TestComponent,
+    FakeColorComponent,
+    FakeEmployeeComponent
   ],
   imports: [
     BrowserModule,

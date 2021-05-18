@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BikesComponent } from './bikes/bikes.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { FakeColorComponent } from './fake-color/fake-color.component';
+import { FakeEmployeeComponent } from './fake-employee/fake-employee.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { MobilesComponent } from './mobiles/mobiles.component';
@@ -16,7 +18,9 @@ const routes: Routes = [
   {path:'register',  component:RegisterComponent},
   {path:'login',     component:LoginComponent},
   {path:'contactus', component:ContactusComponent},
-  {path:'test', component:TestComponent},
+  /*{path:'test', component:TestComponent},*/
+  {path:'fakecolor', component:FakeColorComponent},
+  {path:'fakeemployee', component:FakeEmployeeComponent},
   {path:'products',  component:ProductsComponent, children:[
     {path:'mobiles',     component:MobilesComponent},
     {path:'bikes',       component:BikesComponent},

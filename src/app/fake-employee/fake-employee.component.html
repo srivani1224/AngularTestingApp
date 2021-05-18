@@ -1,0 +1,119 @@
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+        <div class="col mt-5" *ngFor="let empObj of myEmp; let ind=index">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-9">
+                            <h5 style="color: rgb(201, 35, 201);">{{empObj.name}}</h5>
+                            <h5>Id       : {{empObj.id}}</h5>
+                            <h5>UserName : {{empObj.username}}</h5>
+                            <h5>Email    : {{empObj.email}}</h5>
+                        </div>
+                        <div class="col-3">
+                            <img class="w-sm-10"  src="https://cdn1.vectorstock.com/i/thumb-large/00/65/user-profile-grey-icon-web-avatar-employee-vector-32550065.jpg"  
+                            style="border:1px solid black;" width=80% alt="">
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" [attr.data-bs-target]="'#mdl'+ind">
+                            More Info
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" [attr.id]="'mdl'+ind"  data-bs-backdrop="static">
+                            <div class="modal-dialog modal-lg" style="background-color: burlywood;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel" style="color: purple; text-shadow: purple;">{{empObj.name}}</h5>
+                                    <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body m-3 mb-5  h-100 pb-4">
+                                    <div>
+                                        <p class="key d-inline">Id  :  </p>
+                                        <p class="value d-inline"> {{empObj.id}}</p>
+                                    </div>
+                                    <div>
+                                        <p class="key d-inline">Name  :  </p>
+                                        <p class=" value d-inline"> {{empObj.name}}</p>
+                                    </div>
+                                    <div>
+                                        <p class="key d-inline">Username  :  </p>
+                                        <p class=" value d-inline"> {{empObj.username}}</p>
+                                    </div>
+                                    <dl style="position: relative; padding-bottom: 4.2em;" >
+                                        <dt>
+                                            <p class=" key d-inline">Company  :  </p>
+                                        </dt>
+                                        <dd style="position:absolute;left:2.5em">
+                                            <div >
+                                                <p class=" key d-inline">Name  :  </p>
+                                                <p class="value d-inline"> {{empObj.company["name"]}}</p>
+                                            </div>  
+                                            <div>
+                                                <p class="key d-inline">Catch phrase  :  </p>
+                                                <p class="value d-inline"> {{empObj.company["catchPhrase"]}}</p>
+                                            </div>  
+                                            <div>
+                                                <p class="key d-inline">Bs  :  </p>
+                                                <p class="value d-inline"> {{empObj.company["bs"]}}</p>
+                                            </div> 
+                                        </dd>
+                                    </dl>
+                                  <div >
+                                    <p class="key d-inline">Phone  :  </p>
+                                    <p class="value d-inline"> {{empObj.phone}}</p>
+                                 </div> 
+                                 <div >
+                                    <p class="key d-inline">Email  :  </p>
+                                    <p class="value d-inline"> {{empObj.email}}</p>
+                                 </div> 
+                                 <div >
+                                    <p class="key d-inline">Website  :  </p>
+                                    <p class="value d-inline"> {{empObj.website}}</p>
+                                 </div> 
+                                 <address>
+                                    <dl style="position: relative;padding-bottom: 4em;" >
+                                        <dt>
+                                            <p class=" key d-inline">Address  :  </p>
+                                        </dt>
+                                        <dd style="position:absolute;left:2.5em">
+                                            <div >
+                                                <p class=" key d-inline">Street  :  </p>
+                                                <p class="value d-inline"> {{empObj.address["street"]}},</p>
+                                            </div>  
+                                            <div>
+                                                <p class="key d-inline">Suite  :  </p>
+                                                <p class="value d-inline"> {{empObj.address["suite"]}},</p>
+                                            </div>  
+                                            <div>
+                                                <p class="key d-inline">City :  </p>
+                                                <p class="value d-inline"> {{empObj.address["city"]}},</p>
+                                            </div> 
+                                            <div>
+                                                <p class="key d-inline">Zip code :  </p>
+                                                <p class="value d-inline"> {{empObj.address["zipcode"]}},</p>
+                                            </div> 
+                                            <div>
+                                                <p class="key d-inline">Geo :  </p>
+                                                <p class="value d-inline"> ( {{empObj.address["geo"]["lat"]}} , {{empObj.address["geo"]["lat"]}} ).</p>
+                                            </div> 
+                                        </dd>
+                                    </dl>
+                                 </address>
+                    
+                    
+                    
+                    
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
