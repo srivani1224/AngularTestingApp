@@ -1,0 +1,14 @@
+<div class="table text-white " style="text-align: center; margin-left: 40%;">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let userObj of myUsers">
+            <td>{{userObj.email}}</td>
+            <td><button class="btn bg-dark text-white" (click)="onSelectId(userObj.id)">{{userObj.id}}</button></td>
+        </tr>
+    </tbody>
+</div>

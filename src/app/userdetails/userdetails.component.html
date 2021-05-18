@@ -1,0 +1,58 @@
+<div class="container text-white" style="border: 2px solid black; padding: 5em; margin-top: 3em;">
+    <div class="row">
+        <div class="col-8">
+            <h1 style="font-family: 'Brush Script MT'; font-size: 5em; color: burlywood;">{{userbyid.name}}</h1>
+            <div>
+                <p class="key d-inline">Id  :  </p>
+                <p class="value d-inline"> {{userbyid.id}}</p>
+            </div>
+            <div>
+                <p class="key d-inline">Name  :  </p>
+                <p class=" value d-inline"> {{userbyid.name}}</p>
+            </div>
+            <div >
+               <p class="key d-inline">Email  :  </p>
+               <p class="value d-inline"> {{userbyid.email}}</p>
+            </div> 
+            <div >
+                <p class="key d-inline">Phone  :  </p>
+                <p class="value d-inline"> {{userbyid.phone}}</p>
+            </div> 
+            <div >
+                <p class="key d-inline">Profession  :  </p>
+                <p class="value d-inline"> {{userbyid.profession}}</p>
+            </div> 
+            <div >
+                <p class="key d-inline">Phone  :  </p>
+                <p class="value d-inline"> {{userbyid.phone}}</p>
+            </div> 
+         <address>
+            <dl style="position: relative;padding-bottom: 4em;" >
+                <dt>
+                    <p class=" key d-inline">Address  :  </p>
+                </dt>
+                <dd style="position:absolute;left:2.5em">
+                    <div >
+                        <p class=" key d-inline">Street  :  </p>
+                        <p class="value d-inline"> {{userbyid.address["street"]}},</p>
+                    </div>  
+                    <div>
+                        <p class="key d-inline">Suite  :  </p>
+                        <p class="value d-inline"> {{userbyid.address["suite"]}},</p>
+                    </div>  
+                    <div>
+                        <p class="key d-inline">City :  </p>
+                        <p class="value d-inline"> {{userbyid.address["city"]}},</p>
+                    </div> 
+                    <div>
+                        <p class="key d-inline">Zip code :  </p>
+                        <p class="value d-inline"> {{userbyid.address["zipcode"]}},</p>
+                    </div>
+                </dl>
+            </address>
+        </div>
+        <div class="col-4">
+            <img src={{userbyid.profilePic}} alt="..." width="100%" style="border-radius: 3px; border: 2px solid black;">
+        </div>
+    </div>
+</div>

@@ -4,6 +4,7 @@ import { Post } from '../app/models/posts.model'
 import { Fakecolor } from './models/fakecolor.model'
 import { Fakeemp} from './models/fakeemp.model'
 import { Observable } from 'rxjs';
+import { Users } from './models/users.model'
 
 @Injectable({
   providedIn: 'root'
@@ -25,5 +26,13 @@ export class FakedataService {
 
   getEmp():Observable<Fakeemp[]>{
     return this.fakeObj.get<Fakeemp[]>('https://jsonplaceholder.typicode.com/users')
+  }
+
+  getUsers():Observable<Users[]>{
+    return this.fakeObj.get<Users[]>('http://localhost:3000/users')
+  }
+
+  getUserById(id):Observable<Users>{
+    return this.fakeObj.get<Users>('http://localhost:3000/users/'+id)
   }
 }

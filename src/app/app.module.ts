@@ -20,6 +20,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { TestComponent } from './test/test.component';
 import { FakeColorComponent } from './fake-color/fake-color.component';
 import { FakeEmployeeComponent } from './fake-employee/fake-employee.component';
+import { UsersComponent } from './users/users.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { FakeEmployeeComponent } from './fake-employee/fake-employee.component';
     PageNotFoundComponent,
     TestComponent,
     FakeColorComponent,
-    FakeEmployeeComponent
+    FakeEmployeeComponent,
+    UsersComponent,
+    UserdetailsComponent
   ],
   imports: [
     BrowserModule,
