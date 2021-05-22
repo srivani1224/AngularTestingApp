@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Product } from './models/products.model';
+import { Mobile } from './models/mobile.model';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -11,9 +11,26 @@ export class DataService {
   //import HttpClient object to service
   constructor(private hc: HttpClient) { }
     
-
-      getMobilesData():Observable<Product[]>{
+      //to read mobiles data
+      getMobilesData():Observable<Mobile[]>{
           //http get
-          return this.hc.get<Product[]>("assets/data-mobiles.json");
+          return this.hc.get<Mobile[]>("http://localhost:3000/mobiles");
       }
+
+      //to save /create new mobile data
+      createNewMobile(mobileObj):Observable<any>{
+        return this.hc.post("http://localhost:3000/mobiles",mobileObj)
+      }
+
+      //update mobile
+      updateMobile(modifiedMobileObject):Observable<any>{
+        return this.hc.put("http://localhost:3000/mobiles/"+modifiedMobileObject.id,modifiedMobileObject);
+      }
+
+      //delete mobile
+      deleteMobile(id):Observable<any>{
+        console.log("id is ",id)
+        return this.hc.delete("http://localhost:3000/mobiles/"+id)
+      }
+
 }

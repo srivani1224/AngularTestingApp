@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddmobileComponent } from './addmobile/addmobile.component';
 import { BikesComponent } from './bikes/bikes.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { FakeColorComponent } from './fake-color/fake-color.component';
@@ -14,6 +15,7 @@ import { TelevisionsComponent } from './televisions/televisions.component';
 import { TestComponent } from './test/test.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { UsersComponent } from './users/users.component';
+import { ViewmobilesComponent } from './viewmobiles/viewmobiles.component';
 
 const routes: Routes = [
   {path:'home',      component:HomeComponent},
@@ -26,12 +28,17 @@ const routes: Routes = [
   {path:'users', component:UsersComponent},
   {path:'users/:id', component:UserdetailsComponent},
   {path:'products',  component:ProductsComponent, children:[
-    {path:'mobiles',     component:MobilesComponent},
+    {path:'mobiles',     component:MobilesComponent, children:[
+      {path:'viewmobiles', component:ViewmobilesComponent},
+      {path:'addmobile', component:AddmobileComponent},
+      {path:'', redirectTo:"/products/mobiles/viewmobiles", pathMatch:"full"}
+    ]},
     {path:'bikes',       component:BikesComponent},
     {path:'televisions', component:TelevisionsComponent},
     {path:'',          redirectTo:'/products/mobiles', pathMatch:'full'}
   ]},
   {path:'',          redirectTo:'/login', pathMatch:'full'},
+  { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
   {path:'**', component:PageNotFoundComponent}
 ];
 

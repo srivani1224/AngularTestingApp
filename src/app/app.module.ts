@@ -22,6 +22,8 @@ import { FakeColorComponent } from './fake-color/fake-color.component';
 import { FakeEmployeeComponent } from './fake-employee/fake-employee.component';
 import { UsersComponent } from './users/users.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { ViewmobilesComponent } from './viewmobiles/viewmobiles.component';
+import { AddmobileComponent } from './addmobile/addmobile.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { UserdetailsComponent } from './userdetails/userdetails.component';
     FakeColorComponent,
     FakeEmployeeComponent,
     UsersComponent,
-    UserdetailsComponent
+    UserdetailsComponent,
+    ViewmobilesComponent,
+    AddmobileComponent
   ],
   imports: [
     BrowserModule,

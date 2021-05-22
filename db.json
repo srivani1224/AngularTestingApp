@@ -1,143 +1,187 @@
 {
-    "users":[
-        {
-          "id": 1,
-          "email": "Sincere@april.biz",
-          "name": "Leanne Graham",
-          "profilePic": "https://reqres.in/img/faces/7-image.jpg",
-          "address": {
-            "street": "Kulas Light",
-            "suite": "Apt. 556",
-            "city": "Gwenborough",
-            "zipcode": "92998-3874"
-          },
-          "profession":"Doctor",
-          "phone": "1-770-736-8031 x56442"
-        },
-        {
-          "id": 2,
-          "email": "Shanna@melissa.tv",
-          "name": "Ervin Howell",
-          "profilePic": "https://reqres.in/img/faces/8-image.jpg",
-          "address": {
-            "street": "Victor Plains",
-            "suite": "Suite 879",
-            "city": "Wisokyburgh",
-            "zipcode": "90566-7771"
-          },
-          "profession":"Doctor",
-          "phone": "010-692-6593 x09125"
-        },
-        {
-          "id": 3,
-          "email": "Nathan@yesenia.net",
-          "name": "Clementine Bauch",
-          "profilePic": "https://reqres.in/img/faces/9-image.jpg",
-          "address": {
-            "street": "Douglas Extension",
-            "suite": "Suite 847",
-            "city": "McKenziehaven",
-            "zipcode": "59590-4157"
-          },
-          "profession":"Doctor",
-          "phone": "1-463-123-4447"
-        },
-        {
-          "id": 4,
-          "email": "Julianne.OConner@kory.org",
-          "name": "Patricia Lebsack",
-          "profilePic": "https://reqres.in/img/faces/10-image.jpg",
-          "address": {
-            "street": "Hoeger Mall",
-            "suite": "Apt. 692",
-            "city": "South Elvis",
-            "zipcode": "53919-4257"
-          },
-          "profession":"Doctor",
-          "phone": "493-170-9623 x156"
-        },
-        {
-          "id": 5,
-          "email": "Lucio_Hettinger@annie.ca",
-          "name": "Chelsey Dietrich",
-          "profilePic": "https://reqres.in/img/faces/11-image.jpg",
-          "address": {
-            "street": "Skiles Walks",
-            "suite": "Suite 351",
-            "city": "Roscoeview"
-          },
-          "profession":"Doctor",
-          "phone": "(254)954-1289"
-        },
-        {
-          "id": 6,
-          "email": "Karley_Dach@jasper.info",
-          "name": "Mrs. Dennis Schulist",
-          "profilePic": "https://reqres.in/img/faces/12-image.jpg",
-          "address": {
-            "street": "Norberto Crossing",
-            "suite": "Apt. 950",
-            "city": "South Christy",
-            "zipcode": "23505-1337"
-          },
-          "profession":"Doctor",
-          "phone": "1-477-935-8478 x6430"
-        },
-        {
-          "id": 7,
-          "email": "Telly.Hoeger@billy.biz",
-          "name": "Kurtis Weissnat",
-          "profilePic": "https://reqres.in/img/faces/7-image.jpg",
-          "address": {
-            "street": "Rex Trail",
-            "suite": "Suite 280",
-            "city": "Howemouth",
-            "zipcode": "58804-1099"
-          },
-          "profession":"Doctor",
-          "phone": "210.067.6132"
-        },
-        {
-          "id": 8,
-          "email": "Sherwood@rosamond.me",
-          "name": "Nicholas Runolfsdottir V",
-          "profilePic": "https://reqres.in/img/faces/8-image.jpg",
-          "address": {
-            "street": "Ellsworth Summit",
-            "suite": "Suite 729",
-            "city": "Aliyaview",
-            "zipcode": "45169"
-          },
-          "profession":"Doctor",
-          "phone": "586.493.6943 x140"
-        },
-        {
-          "id": 9,
-          "email": "Chaim_McDermott@dana.io",
-          "name": "Glenna Reichert",
-          "profilePic": "https://reqres.in/img/faces/9-image.jpg",
-          "address": {
-            "street": "Dayna Park",
-            "suite": "Suite 449",
-            "city": "Bartholomebury",
-            "zipcode": "76495-3109"
-          },
-          "profession":"Doctor",
-          "phone": "(775)976-6794 x41206"
-        },
-        {
-          "id": 10,
-          "email": "Rey.Padberg@karina.biz",
-          "name": "Clementina DuBuque",
-          "profilePic": "https://reqres.in/img/faces/10-image.jpg",
-          "address": {
-            "street": "Kattie Turnpike",
-            "suite": "Suite 198",
-            "city": "Lebsackbury",
-            "zipcode": "31428-2261"
-          },
-          "profession":"Lawyer",
-          "phone": "024-648-3804"
-        }
-      ]
+  "mobiles": [
+    {
+      "productTitle": "Samsung123",
+      "description": "Samsung helps you discover a wide range of home electronics with cutting-edge technology including smartphones, tablets, TVs, home appliances and more.",
+      "id": 1,
+      "productImage": "https://www.sathya.in/Media/Default/Thumbs/0038/0038136-vivo-s1-pro-black8gb-ram-128gb-storage-250.jpg"
+    },
+    {
+      "productTitle": "Honor v10",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "id": 3,
+      "productImage": "https://5.imimg.com/data5/AW/IX/GLADMIN-53160395/galaxy-s-500x500.png"
+    },
+    {
+      "id": 4,
+      "productTitle": "Iphone-11",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "productImage": "https://img.tatacliq.com/images/i7/1348Wx2000H/MP000000005562292_1348Wx2000H_202011300234051.jpeg"
+    },
+    {
+      "id": 5,
+      "productTitle": "OnePlus",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "productImage": "https://670354.smushcdn.com/2260778/wp-content/uploads/2021/03/AMZ101-2.jpg"
+    },
+    {
+      "id": 6,
+      "productTitle": "Google pixel",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "productImage": "https://www.91-img.com/pictures/105546-v1-google-pixel-xl-mobile-phone-large-1.jpg"
+    },
+    {
+      "productTitle": "Vivo",
+      "productImage": "https://assets.gopaisa.com/unsafe/0x0/https://gpcdn.ams3.cdn.digitaloceanspaces.com/deals/honor-9a-price-offers-amazon.jpg",
+      "description": "Amazon Offers Today & Amazon Sale: 80% OFF in The Great Indian Sale 2021 ",
+      "id": 7
+    },
+    {
+      "productTitle": "Nokia new",
+      "description": " MyNokia Mobile Price in India | New & Latest Nokia Mobile Phones 2021 20th May Images ",
+      "id": 8,
+      "productImage": "https://assets.mspimages.in/c/tr:w-200,h-320,cm-pad_resize/16666-3-1.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "Sincere@april.biz",
+      "name": "Leanne Graham",
+      "profilePic": "https://reqres.in/img/faces/7-image.jpg",
+      "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874"
+      },
+      "profession": "Doctor",
+      "phone": "1-770-736-8031 x56442"
+    },
+    {
+      "id": 2,
+      "email": "Shanna@melissa.tv",
+      "name": "Ervin Howell",
+      "profilePic": "https://reqres.in/img/faces/8-image.jpg",
+      "address": {
+        "street": "Victor Plains",
+        "suite": "Suite 879",
+        "city": "Wisokyburgh",
+        "zipcode": "90566-7771"
+      },
+      "profession": "Doctor",
+      "phone": "010-692-6593 x09125"
+    },
+    {
+      "id": 3,
+      "email": "Nathan@yesenia.net",
+      "name": "Clementine Bauch",
+      "profilePic": "https://reqres.in/img/faces/9-image.jpg",
+      "address": {
+        "street": "Douglas Extension",
+        "suite": "Suite 847",
+        "city": "McKenziehaven",
+        "zipcode": "59590-4157"
+      },
+      "profession": "Doctor",
+      "phone": "1-463-123-4447"
+    },
+    {
+      "id": 4,
+      "email": "Julianne.OConner@kory.org",
+      "name": "Patricia Lebsack",
+      "profilePic": "https://reqres.in/img/faces/10-image.jpg",
+      "address": {
+        "street": "Hoeger Mall",
+        "suite": "Apt. 692",
+        "city": "South Elvis",
+        "zipcode": "53919-4257"
+      },
+      "profession": "Doctor",
+      "phone": "493-170-9623 x156"
+    },
+    {
+      "id": 5,
+      "email": "Lucio_Hettinger@annie.ca",
+      "name": "Chelsey Dietrich",
+      "profilePic": "https://reqres.in/img/faces/11-image.jpg",
+      "address": {
+        "street": "Skiles Walks",
+        "suite": "Suite 351",
+        "city": "Roscoeview"
+      },
+      "profession": "Doctor",
+      "phone": "(254)954-1289"
+    },
+    {
+      "id": 6,
+      "email": "Karley_Dach@jasper.info",
+      "name": "Mrs. Dennis Schulist",
+      "profilePic": "https://reqres.in/img/faces/12-image.jpg",
+      "address": {
+        "street": "Norberto Crossing",
+        "suite": "Apt. 950",
+        "city": "South Christy",
+        "zipcode": "23505-1337"
+      },
+      "profession": "Doctor",
+      "phone": "1-477-935-8478 x6430"
+    },
+    {
+      "id": 7,
+      "email": "Telly.Hoeger@billy.biz",
+      "name": "Kurtis Weissnat",
+      "profilePic": "https://reqres.in/img/faces/7-image.jpg",
+      "address": {
+        "street": "Rex Trail",
+        "suite": "Suite 280",
+        "city": "Howemouth",
+        "zipcode": "58804-1099"
+      },
+      "profession": "Doctor",
+      "phone": "210.067.6132"
+    },
+    {
+      "id": 8,
+      "email": "Sherwood@rosamond.me",
+      "name": "Nicholas Runolfsdottir V",
+      "profilePic": "https://reqres.in/img/faces/8-image.jpg",
+      "address": {
+        "street": "Ellsworth Summit",
+        "suite": "Suite 729",
+        "city": "Aliyaview",
+        "zipcode": "45169"
+      },
+      "profession": "Doctor",
+      "phone": "586.493.6943 x140"
+    },
+    {
+      "id": 9,
+      "email": "Chaim_McDermott@dana.io",
+      "name": "Glenna Reichert",
+      "profilePic": "https://reqres.in/img/faces/9-image.jpg",
+      "address": {
+        "street": "Dayna Park",
+        "suite": "Suite 449",
+        "city": "Bartholomebury",
+        "zipcode": "76495-3109"
+      },
+      "profession": "Doctor",
+      "phone": "(775)976-6794 x41206"
+    },
+    {
+      "id": 10,
+      "email": "Rey.Padberg@karina.biz",
+      "name": "Clementina DuBuque",
+      "profilePic": "https://reqres.in/img/faces/10-image.jpg",
+      "address": {
+        "street": "Kattie Turnpike",
+        "suite": "Suite 198",
+        "city": "Lebsackbury",
+        "zipcode": "31428-2261"
+      },
+      "profession": "Lawyer",
+      "phone": "024-648-3804"
+    }
+  ]
 }
