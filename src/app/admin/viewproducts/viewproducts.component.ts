@@ -18,6 +18,11 @@ export class ViewproductsComponent implements OnInit {
   constructor(private dsObj:DataService) { }
 
   ngOnInit(): void {
+    this.getUsers();
+    
+  }
+
+  getUsers(){
     this.dsObj.getMobilesData().subscribe(
       res=>{
         this.mobiles=res;
@@ -42,9 +47,11 @@ export class ViewproductsComponent implements OnInit {
     modifiedMobileObject.id=this.editMobileObj["id"];
     modifiedMobileObject.productImage=this.editMobileObj["productImage"];
     console.log('Modified object is',modifiedMobileObject)
+    console.log('update mobile')
 
     this.dsObj.updateMobile(modifiedMobileObject).subscribe(
       res=>{
+        this.getUsers();
         console.log(res)
       },
       err=>{
@@ -59,6 +66,7 @@ export class ViewproductsComponent implements OnInit {
     this.dsObj.deleteMobile(mobileObj.id).subscribe(
       res=>{
         //write getting latest data from API
+        this.getUsers();
         console.log("res is ",res);
         alert("Mobile deleted")
       },

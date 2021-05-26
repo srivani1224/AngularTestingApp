@@ -12,7 +12,7 @@
                     <!-- Product Title -->
                     <td>
                         <span *ngIf="!editMobileStatus || editMobileIndex!==ind">
-                            {{mobObj.productTitle}}
+                            {{mobObj.productTitle | uppercase}}
                         </span>
                             <input type="text" name="productTitle" [(ngModel)]="editMobileObj.productTitle" *ngIf="editMobileStatus && editMobileIndex==ind">
 
@@ -34,8 +34,8 @@
                     <!--Edit And Delete-->
                     <td>
                         <span *ngIf="!editMobileStatus || editMobileIndex!==ind">
-                            <button class="btn btn-warning btn-sm text-white p-1 m-1" (click)="editMobile(mobObj,ind)"><i class="far fa-edit"></i></button>
-                            <button class="btn btn-danger btn-sm text-white p-1 m-1"  (click)="deleteMobile(mobObj)"><i class="fas fa-trash-alt"></i></button>
+                            <button class="btn btn-warning btn-sm text-white p-1 m-1" (click)="editMobile(mobObj,ind)" type="button"><i class="far fa-edit"></i></button>
+                            <button class="btn btn-danger btn-sm text-white p-1 m-1"  (click)="deleteMobile(mobObj)" type="button"><i class="fas fa-trash-alt"></i></button>
                         </span>
                         <span *ngIf="editMobileStatus && editMobileIndex==ind">
                             <button class="btn btn-sm btn-success" type="submit" ><i

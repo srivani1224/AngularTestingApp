@@ -24,6 +24,8 @@ import { UsersComponent } from './users/users.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { ViewmobilesComponent } from './viewmobiles/viewmobiles.component';
 import { AddmobileComponent } from './addmobile/addmobile.component';
+import { SquarePipe } from './square.pipe';
+import { SearchPipe } from './search.pipe';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { AddmobileComponent } from './addmobile/addmobile.component';
     UsersComponent,
     UserdetailsComponent,
     ViewmobilesComponent,
-    AddmobileComponent
+    AddmobileComponent,
+    SquarePipe,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
