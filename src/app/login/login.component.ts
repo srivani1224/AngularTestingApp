@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   onLogin(ref){
 
     let userLoginObj = ref.value
-    
+    /*
     //if username and password is admin then only navigate to admin component
     if(userLoginObj.username!='admin'){
       alert('Invalid Username')
@@ -35,7 +35,9 @@ export class LoginComponent implements OnInit {
 
       //navigate to admin component 
       this.router.navigateByUrl('/admin')
-    }
+    }*/
+      console.log(userLoginObj)
   }
+
 
 }
